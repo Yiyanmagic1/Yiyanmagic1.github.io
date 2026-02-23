@@ -1,0 +1,224 @@
+body {
+  background: #fff0e6;
+}
+a {
+  color: #b82020;
+}
+a:hover {
+  color: #e6452f;
+}
+::selection {
+  background: #f6c4b8;
+  color: #4a1712;
+}
+:root {
+  --btn-bg: #f4c7b8;
+  --btn-hover-color: #e98d73;
+  --btn-color: #7a1a18;
+  --default-bg-color: #e98d73;
+  --scrollbar-color: #e98d73;
+}
+.header-inner {
+  position: relative;
+  background: transparent;
+}
+.header-inner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #f6d28b, #e98d73, #f6d28b, #e98d73);
+  background-size: 200% 100%;
+  animation: china-red-border 10s linear infinite;
+  opacity: 0.9;
+  pointer-events: none;
+}
+.card-widget {
+  position: relative;
+  border: 1px solid rgba(139,26,26,0.18);
+  background: rgba(255,248,240,0.9);
+}
+.card-widget::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 2px;
+  background: #b82020;
+}
+.card-widget::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #e6b34b;
+}
+.card-widget .widget-title {
+  color: #b82020;
+}
+.recent-posts .recent-post-item {
+  position: relative;
+  border: 1px solid rgba(139,26,26,0.24);
+  background: #fff6ee;
+  background-image: repeating-linear-gradient(45deg, rgba(192,72,81,0.25) 0, rgba(192,72,81,0.25) 2px, transparent 2px, transparent 6px);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+}
+.recent-posts .recent-post-item::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 28px;
+  height: 3px;
+  background: linear-gradient(90deg, #b82020, #e6b34b);
+}
+.recent-posts .article-title {
+  color: #3d1b1b;
+}
+.recent-posts .article-title:hover {
+  color: #b82020;
+}
+.recent-posts .recent-post-item:hover {
+  border-color: #b82020;
+  box-shadow: 0 10px 26px rgba(139,26,26,0.18);
+  transform: translateY(-3px);
+}
+.site-title {
+  color: #f9e4be;
+}
+.post-meta {
+  color: #b07b6a;
+}
+.post-meta a {
+  color: #b07b6a;
+}
+.post-meta a:hover {
+  color: #b82020;
+}
+.post-copyright {
+  border-left: 3px solid #b82020;
+}
+blockquote {
+  border-left: 4px solid #b82020;
+  background: rgba(184,32,32,0.08);
+}
+hr {
+  border-color: rgba(184,32,32,0.55);
+}
+.pagination .page-number.current {
+  background: #b82020;
+  color: #fff;
+}
+.pagination .page-number:hover {
+  background: #e6452f;
+  color: #fff;
+}
+.pagination .extend {
+  color: #b82020;
+}
+.pagination .extend:hover {
+  color: #e6452f;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(184,32,32,0.8);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(230,69,47,0.9);
+}
+.menu-item a:hover {
+  color: #f9e4be;
+}
+#page-header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff4ea 0%, #ffe1d0 45%, #f5c3aa 100%);
+}
+#page-header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #e6b34b, #c04851, #e6b34b);
+  opacity: 0.9;
+  pointer-events: none;
+}
+#page-header::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 120px;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, rgba(192,72,81,0.6) 0, rgba(192,72,81,0.6) 12px, transparent 12px, transparent 18px);
+  transform: translateX(-50%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+#rightside > div > button,
+#rightside > div > a {
+  background-color: #f4c7b8;
+  color: #7a1a18;
+}
+#rightside > div > button:hover,
+#rightside > div > a:hover {
+  background-color: #e98d73;
+  color: #fff;
+}
+#card-info-btn {
+  background-color: #f4c7b8;
+  color: #7a1a18;
+}
+#card-info-btn:hover {
+  background-color: #e98d73;
+  color: #fff;
+}
+#footer {
+  background: #f1bfa8;
+  border-top: 1px solid #f1bfa8;
+}
+#footer,
+#footer a {
+  color: #000;
+}
+#footer a:hover {
+  color: #000;
+}
+@-moz-keyframes china-red-border {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+@-webkit-keyframes china-red-border {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+@-o-keyframes china-red-border {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+@keyframes china-red-border {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
