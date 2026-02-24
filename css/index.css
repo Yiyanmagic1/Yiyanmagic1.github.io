@@ -8534,6 +8534,16 @@ hr {
 #nav .site-page::after {
   background-color: #d4af37 !important;
 }
+#rightside {
+  opacity: 1 !important;
+  -ms-filter: none !important;
+  filter: none !important;
+  -webkit-transform: translate(-58px, 0) !important;
+  -moz-transform: translate(-58px, 0) !important;
+  -o-transform: translate(-58px, 0) !important;
+  -ms-transform: translate(-58px, 0) !important;
+  transform: translate(-58px, 0) !important;
+}
 [data-theme="dark"] body {
   background-image: url("/img/beijingdark.png") !important;
 }
@@ -8681,6 +8691,22 @@ hr {
 [data-theme="dark"] #recent-posts > .recent-post-item .post-meta__date,
 [data-theme="dark"] #recent-posts > .recent-post-item .article-meta__categories {
   color: #888 !important;
+}
+[data-theme="dark"] #rightside > div > button,
+[data-theme="dark"] #rightside > div > a {
+  background-color: #1f1f1f !important;
+  color: #d4af37 !important;
+  border: 1px solid rgba(212,175,55,0.3) !important;
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.6) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6) !important;
+}
+[data-theme="dark"] #rightside > div > button:hover,
+[data-theme="dark"] #rightside > div > a:hover {
+  background-color: #d4af37 !important;
+  color: #1f1f1f !important;
+  border-color: #d4af37 !important;
+  -webkit-box-shadow: 0 4px 12px rgba(212,175,55,0.4) !important;
+  box-shadow: 0 4px 12px rgba(212,175,55,0.4) !important;
 }
 @-moz-keyframes china-red-border {
   0% {
