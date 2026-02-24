@@ -7450,6 +7450,7 @@ a:hover {
   --btn-color: #7a1a18;
   --default-bg-color: #e98d73;
   --scrollbar-color: #e98d73;
+  --text-bg-hover: rgba(212,175,55,0.08);
 }
 .header-inner {
   position: relative;
@@ -7728,7 +7729,7 @@ hr {
 }
 .card-widget.card-info {
   width: 340px;
-  background: rgba(255,253,250,0.95);
+  background: var(--card-bg);
   border-radius: 8px;
   padding: 32px 24px;
   position: relative;
@@ -7754,30 +7755,22 @@ hr {
   -webkit-box-shadow: 0 30px 70px rgba(139,90,60,0.2), 0 0 0 2px rgba(212,175,55,0.6), inset 0 0 30px rgba(255,248,240,0.9);
   box-shadow: 0 30px 70px rgba(139,90,60,0.2), 0 0 0 2px rgba(212,175,55,0.6), inset 0 0 30px rgba(255,248,240,0.9);
 }
-.card-widget.card-info::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 15%;
-  right: 15%;
-  height: 3px;
-  background: -webkit-linear-gradient(0deg, transparent, #d4af37 20%, #f0c674 50%, #d4af37 80%, transparent);
-  background: -moz-linear-gradient(0deg, transparent, #d4af37 20%, #f0c674 50%, #d4af37 80%, transparent);
-  background: -o-linear-gradient(0deg, transparent, #d4af37 20%, #f0c674 50%, #d4af37 80%, transparent);
-  background: -ms-linear-gradient(0deg, transparent, #d4af37 20%, #f0c674 50%, #d4af37 80%, transparent);
-  background: linear-gradient(90deg, transparent, #d4af37 20%, #f0c674 50%, #d4af37 80%, transparent);
-}
 .card-widget.card-info::after {
   content: '';
   position: absolute;
   inset: 12px;
   pointer-events: none;
   border-radius: 8px;
-  background: -webkit-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) top left/40px 2px no-repeat, -webkit-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top left/2px 40px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) top right/40px 2px no-repeat, -webkit-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top right/2px 40px no-repeat, -webkit-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/40px 2px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/2px 40px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/40px 2px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/2px 40px no-repeat;
-  background: -moz-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) top left/40px 2px no-repeat, -moz-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top left/2px 40px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) top right/40px 2px no-repeat, -moz-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top right/2px 40px no-repeat, -moz-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/40px 2px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/2px 40px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/40px 2px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/2px 40px no-repeat;
-  background: -o-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) top left/40px 2px no-repeat, -o-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top left/2px 40px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) top right/40px 2px no-repeat, -o-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top right/2px 40px no-repeat, -o-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/40px 2px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/2px 40px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/40px 2px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/2px 40px no-repeat;
-  background: -ms-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) top left/40px 2px no-repeat, -ms-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top left/2px 40px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) top right/40px 2px no-repeat, -ms-linear-gradient(top, #d4af37 0, #d4af37 22px, transparent 22px) top right/2px 40px no-repeat, -ms-linear-gradient(left, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/40px 2px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/2px 40px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/40px 2px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/2px 40px no-repeat;
-  background: linear-gradient(to right, #d4af37 0, #d4af37 22px, transparent 22px) top left/40px 2px no-repeat, linear-gradient(to bottom, #d4af37 0, #d4af37 22px, transparent 22px) top left/2px 40px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 22px, transparent 22px) top right/40px 2px no-repeat, linear-gradient(to bottom, #d4af37 0, #d4af37 22px, transparent 22px) top right/2px 40px no-repeat, linear-gradient(to right, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/40px 2px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 22px, transparent 22px) bottom left/2px 40px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/40px 2px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 22px, transparent 22px) bottom right/2px 40px no-repeat;
+  background: -webkit-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) top left/44px 3px no-repeat, -webkit-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top left/3px 44px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) top right/44px 3px no-repeat, -webkit-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top right/3px 44px no-repeat, -webkit-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/44px 3px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/3px 44px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/44px 3px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/3px 44px no-repeat;
+  background: -moz-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) top left/44px 3px no-repeat, -moz-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top left/3px 44px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) top right/44px 3px no-repeat, -moz-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top right/3px 44px no-repeat, -moz-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/44px 3px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/3px 44px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/44px 3px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/3px 44px no-repeat;
+  background: -o-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) top left/44px 3px no-repeat, -o-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top left/3px 44px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) top right/44px 3px no-repeat, -o-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top right/3px 44px no-repeat, -o-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/44px 3px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/3px 44px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/44px 3px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/3px 44px no-repeat;
+  background: -ms-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) top left/44px 3px no-repeat, -ms-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top left/3px 44px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) top right/44px 3px no-repeat, -ms-linear-gradient(top, #d4af37 0, #d4af37 24px, transparent 24px) top right/3px 44px no-repeat, -ms-linear-gradient(left, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/44px 3px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/3px 44px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/44px 3px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/3px 44px no-repeat;
+  background: linear-gradient(to right, #d4af37 0, #d4af37 24px, transparent 24px) top left/44px 3px no-repeat, linear-gradient(to bottom, #d4af37 0, #d4af37 24px, transparent 24px) top left/3px 44px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 24px, transparent 24px) top right/44px 3px no-repeat, linear-gradient(to bottom, #d4af37 0, #d4af37 24px, transparent 24px) top right/3px 44px no-repeat, linear-gradient(to right, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/44px 3px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 24px, transparent 24px) bottom left/3px 44px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/44px 3px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 24px, transparent 24px) bottom right/3px 44px no-repeat;
+}
+#aside-content .card-widget {
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .avatar-img {
   position: relative;
@@ -7843,6 +7836,51 @@ hr {
   text-align: center;
   margin-bottom: 8px;
   letter-spacing: 0.2em;
+  position: relative;
+}
+.author-info-name::before {
+  content: 'author';
+  position: absolute;
+  top: -54px;
+  right: -6px;
+  width: 40px;
+  height: 40px;
+  background: rgba(232,180,163,0.9);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-family: 'Times New Roman', 'Noto Serif SC', serif;
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  transform: rotate(12deg);
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid rgba(255,255,255,0.3);
 }
 .author-info-name::after {
   content: '';
@@ -7994,6 +8032,393 @@ hr {
   background: -ms-linear-gradient(315deg, #eac4b5 0, #d9b080 100%) !important;
   background: linear-gradient(135deg, #eac4b5 0, #d9b080 100%) !important;
 }
+.card-widget.card-webinfo,
+.card-widget.card-announcement,
+.card-widget.card-recent-post,
+.card-widget.card-categories,
+.card-widget.card-archives,
+#card-toc.card-widget {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 35px 32px;
+  -webkit-box-shadow: 0 20px 60px rgba(139,90,60,0.15), 0 0 0 1px rgba(212,175,55,0.4), inset 0 0 30px rgba(255,248,240,0.8);
+  box-shadow: 0 20px 60px rgba(139,90,60,0.15), 0 0 0 1px rgba(212,175,55,0.4), inset 0 0 30px rgba(255,248,240,0.8);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card-widget.card-webinfo:hover,
+.card-widget.card-announcement:hover,
+.card-widget.card-recent-post:hover,
+.card-widget.card-categories:hover,
+.card-widget.card-archives:hover,
+#card-toc.card-widget:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 30px 70px rgba(139,90,60,0.2), 0 0 0 2px rgba(212,175,55,0.6), inset 0 0 30px rgba(255,248,240,0.9);
+  box-shadow: 0 30px 70px rgba(139,90,60,0.2), 0 0 0 2px rgba(212,175,55,0.6), inset 0 0 30px rgba(255,248,240,0.9);
+}
+.card-widget.card-announcement::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  pointer-events: none;
+  border-radius: 8px;
+  background: -webkit-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) top left/36px 2px no-repeat, -webkit-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top left/2px 36px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) top right/36px 2px no-repeat, -webkit-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top right/2px 36px no-repeat;
+  background: -moz-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) top left/36px 2px no-repeat, -moz-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top left/2px 36px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) top right/36px 2px no-repeat, -moz-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top right/2px 36px no-repeat;
+  background: -o-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) top left/36px 2px no-repeat, -o-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top left/2px 36px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) top right/36px 2px no-repeat, -o-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top right/2px 36px no-repeat;
+  background: -ms-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) top left/36px 2px no-repeat, -ms-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top left/2px 36px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) top right/36px 2px no-repeat, -ms-linear-gradient(top, #d4af37 0, #d4af37 20px, transparent 20px) top right/2px 36px no-repeat;
+  background: linear-gradient(to right, #d4af37 0, #d4af37 20px, transparent 20px) top left/36px 2px no-repeat, linear-gradient(to bottom, #d4af37 0, #d4af37 20px, transparent 20px) top left/2px 36px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 20px, transparent 20px) top right/36px 2px no-repeat, linear-gradient(to bottom, #d4af37 0, #d4af37 20px, transparent 20px) top right/2px 36px no-repeat;
+}
+.card-widget.card-webinfo::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  pointer-events: none;
+  border-radius: 8px;
+  background: -webkit-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: -moz-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: -o-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: -ms-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: linear-gradient(to right, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+}
+#aside-content .card-widget.card-announcement,
+#aside-content .card-widget.card-recent-post,
+#aside-content .card-widget.card-categories,
+#aside-content .card-widget.card-archives {
+  border-left: 2px solid rgba(212,175,55,0.45);
+  border-right: 2px solid rgba(212,175,55,0.45);
+}
+#body-wrap.post .card-widget.card-recent-post::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  pointer-events: none;
+  border-radius: 8px;
+  background: -webkit-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -webkit-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -webkit-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: -moz-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -moz-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -moz-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: -o-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -o-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -o-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: -ms-linear-gradient(left, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, -ms-linear-gradient(right, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, -ms-linear-gradient(bottom, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+  background: linear-gradient(to right, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/36px 2px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 20px, transparent 20px) bottom left/2px 36px no-repeat, linear-gradient(to left, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/36px 2px no-repeat, linear-gradient(to top, #d4af37 0, #d4af37 20px, transparent 20px) bottom right/2px 36px no-repeat;
+}
+#aside-content .card-widget.card-webinfo .item-headline,
+#aside-content .card-widget.card-announcement .item-headline,
+#aside-content .card-widget.card-recent-post .item-headline,
+#aside-content .card-widget.card-categories .item-headline,
+#aside-content .card-widget.card-archives .item-headline,
+#aside-content #card-toc.card-widget .item-headline {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(212,175,55,0.3);
+  position: relative;
+}
+#aside-content .card-widget.card-webinfo .item-headline::after,
+#aside-content .card-widget.card-announcement .item-headline::after,
+#aside-content .card-widget.card-recent-post .item-headline::after,
+#aside-content .card-widget.card-categories .item-headline::after,
+#aside-content .card-widget.card-archives .item-headline::after,
+#aside-content #card-toc.card-widget .item-headline::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background: -webkit-linear-gradient(0deg, #d4af37, transparent);
+  background: -moz-linear-gradient(0deg, #d4af37, transparent);
+  background: -o-linear-gradient(0deg, #d4af37, transparent);
+  background: -ms-linear-gradient(0deg, #d4af37, transparent);
+  background: linear-gradient(90deg, #d4af37, transparent);
+}
+.card-widget.card-webinfo .item-headline i,
+.card-widget.card-announcement .item-headline i,
+.card-widget.card-recent-post .item-headline i,
+.card-widget.card-categories .item-headline i,
+.card-widget.card-archives .item-headline i,
+#card-toc.card-widget .item-headline i {
+  font-size: 20px;
+  color: #c65d3b;
+}
+.card-widget.card-webinfo .item-headline span,
+.card-widget.card-announcement .item-headline span,
+.card-widget.card-recent-post .item-headline span,
+.card-widget.card-categories .item-headline span,
+.card-widget.card-archives .item-headline span,
+#card-toc.card-widget .item-headline span {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 22px;
+  color: #5c3d2e;
+  letter-spacing: 0.18em;
+}
+.card-widget.card-webinfo .webinfo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  padding-bottom: 32px;
+}
+.card-widget.card-webinfo .webinfo-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card-widget.card-webinfo .webinfo-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: #d4af37;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+.card-widget.card-webinfo .webinfo-item:hover {
+  background: -webkit-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -moz-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -o-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -ms-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: linear-gradient(90deg, rgba(212,175,55,0.05), transparent);
+  margin: 0 -6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+.card-widget.card-webinfo .webinfo-item:hover::before {
+  height: 60%;
+}
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: #d4af37;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item:hover {
+  background: -webkit-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -moz-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -o-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -ms-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: linear-gradient(90deg, rgba(212,175,55,0.05), transparent);
+  margin: 0 -6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item:hover::before {
+  height: 60%;
+}
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item:hover .content > .title,
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item:hover .content > .comment,
+#aside-content .card-widget.card-recent-post .aside-list .aside-list-item:hover .content > .name {
+  color: #c65d3b;
+}
+#aside-content .card-widget.card-categories .card-category-list-item > a,
+#aside-content .card-widget.card-archives .card-archive-list-item > a {
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#aside-content .card-widget.card-categories .card-category-list-item > a::before,
+#aside-content .card-widget.card-archives .card-archive-list-item > a::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: #d4af37;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -webkit-transition: height 0.3s ease;
+  -moz-transition: height 0.3s ease;
+  -o-transition: height 0.3s ease;
+  -ms-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+#aside-content .card-widget.card-categories .card-category-list-item > a:hover,
+#aside-content .card-widget.card-archives .card-archive-list-item > a:hover {
+  background: -webkit-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -moz-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -o-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: -ms-linear-gradient(0deg, rgba(212,175,55,0.05), transparent);
+  background: linear-gradient(90deg, rgba(212,175,55,0.05), transparent);
+  margin: 0 -6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  color: #c65d3b;
+}
+#aside-content .card-widget.card-categories .card-category-list-item > a:hover span,
+#aside-content .card-widget.card-archives .card-archive-list-item > a:hover span {
+  color: #c65d3b;
+}
+#aside-content #card-toc.card-widget .toc-link {
+  color: #5c3d2e;
+}
+#aside-content #card-toc.card-widget .toc-link:hover {
+  color: #d4af37;
+  background: transparent;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#aside-content #card-toc.card-widget .toc-link.active {
+  background: rgba(212,175,55,0.25);
+  color: #5c3d2e;
+  border-left: 2px solid #d4af37;
+}
+#aside-content #card-toc.card-widget .toc-link.active:hover {
+  background: rgba(212,175,55,0.25);
+  color: #5c3d2e;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#aside-content .card-widget.card-categories .card-category-list-item > a:hover::before,
+#aside-content .card-widget.card-archives .card-archive-list-item > a:hover::before {
+  height: 60%;
+}
+.card-widget.card-webinfo .item-name {
+  font-size: 15px;
+  color: #8b6f5c;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  gap: 8px;
+}
+.card-widget.card-webinfo .item-name::before {
+  content: '◆';
+  font-size: 6px;
+  color: #d4af37;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+.card-widget.card-webinfo .item-count {
+  font-size: 16px;
+  color: #5c3d2e;
+  font-weight: 600;
+  font-family: 'Noto Serif SC', serif;
+  letter-spacing: 0.5px;
+}
 .card-info-social-icons {
   display: -webkit-box;
   display: -moz-box;
@@ -8050,6 +8475,40 @@ hr {
   -webkit-box-shadow: 0 5px 15px rgba(212,175,55,0.3);
   box-shadow: 0 5px 15px rgba(212,175,55,0.3);
   border-color: transparent;
+}
+#post {
+  position: relative;
+  background: -webkit-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -webkit-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -webkit-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
+  background: -moz-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -moz-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -moz-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
+  background: -o-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -o-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -o-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
+  background: -ms-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -ms-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -ms-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
+  background: radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), linear-gradient(135deg, #faf6f1 0, #f0e6d8 100%);
+  overflow: hidden;
+}
+#post::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+#post::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: -webkit-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+  background-image: -moz-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+  background-image: -o-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -o-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+  background-image: -ms-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -ms-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+}
+#post > * {
+  position: relative;
+  z-index: 1;
 }
 @-moz-keyframes china-red-border {
   0% {
