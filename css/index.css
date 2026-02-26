@@ -8487,33 +8487,25 @@ hr {
 }
 #post {
   position: relative;
-  background: -webkit-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -webkit-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -webkit-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
-  background: -moz-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -moz-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -moz-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
-  background: -o-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -o-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -o-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
-  background: -ms-radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), -ms-radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), -ms-linear-gradient(315deg, #faf6f1 0, #f0e6d8 100%);
-  background: radial-gradient(circle at 20% 50%, rgba(212,175,55,0.15) 0, transparent 50%), radial-gradient(circle at 80% 80%, rgba(198,134,111,0.2) 0, transparent 50%), linear-gradient(135deg, #faf6f1 0, #f0e6d8 100%);
+  background: -webkit-radial-gradient(circle at 30% 20%, rgba(212,175,55,0.05) 0, transparent 40%), -webkit-linear-gradient(315deg, #fff 0, #fffbf0 100%);
+  background: -moz-radial-gradient(circle at 30% 20%, rgba(212,175,55,0.05) 0, transparent 40%), -moz-linear-gradient(315deg, #fff 0, #fffbf0 100%);
+  background: -o-radial-gradient(circle at 30% 20%, rgba(212,175,55,0.05) 0, transparent 40%), -o-linear-gradient(315deg, #fff 0, #fffbf0 100%);
+  background: -ms-radial-gradient(circle at 30% 20%, rgba(212,175,55,0.05) 0, transparent 40%), -ms-linear-gradient(315deg, #fff 0, #fffbf0 100%);
+  background: radial-gradient(circle at 30% 20%, rgba(212,175,55,0.05) 0, transparent 40%), linear-gradient(135deg, #fff 0, #fffbf0 100%);
   overflow: hidden;
+  -webkit-box-shadow: 0 4px 12px rgba(139,26,26,0.05);
+  box-shadow: 0 4px 12px rgba(139,26,26,0.05);
 }
 #post::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stichTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 0;
 }
 #post::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: -webkit-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
-  background-image: -moz-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
-  background-image: -o-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -o-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
-  background-image: -ms-linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), -ms-linear-gradient(0deg, rgba(212,175,55,0.03) 1px, transparent 1px);
-  background-image: linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.03) 1px, transparent 1px);
-  background-size: 50px 50px;
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 #post > * {
   position: relative;
@@ -8581,6 +8573,15 @@ hr {
   -o-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
   transform: translateY(-2px);
+}
+[data-theme="dark"] #post:hover {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -o-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+  -webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.8) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.8) !important;
 }
 [data-theme="dark"] #post {
   background: -webkit-radial-gradient(circle at 30% 20%, rgba(212,175,55,0.05) 0, transparent 40%), -webkit-linear-gradient(315deg, #141414 0, #1a1a1a 100%) !important;
@@ -8707,6 +8708,178 @@ hr {
   border-color: #d4af37 !important;
   -webkit-box-shadow: 0 4px 12px rgba(212,175,55,0.4) !important;
   box-shadow: 0 4px 12px rgba(212,175,55,0.4) !important;
+}
+:root {
+  --hl-color: #7a1a18 !important;
+  --hl-bg: #fff4ea !important;
+  --hltools-bg: #f4c7b8 !important;
+  --hltools-color: #7a1a18 !important;
+  --hlnumber-bg: #fff4ea !important;
+  --hlnumber-color: rgba(122,26,24,0.4) !important;
+  --hlscrollbar-bg: #e98d73 !important;
+  --hlexpand-bg: linear-gradient(180deg, rgba(255,244,234,0.6), rgba(255,244,234,0.9)) !important;
+}
+[data-theme="dark"] {
+  --hl-color: #d4af37 !important;
+  --hl-bg: #1f1f1f !important;
+  --hltools-bg: #252525 !important;
+  --hltools-color: #a0a0a0 !important;
+  --hlnumber-bg: #1f1f1f !important;
+  --hlnumber-color: rgba(212,175,55,0.4) !important;
+  --hlscrollbar-bg: #d4af37 !important;
+  --hlexpand-bg: linear-gradient(180deg, rgba(31,31,31,0.6), rgba(31,31,31,0.9)) !important;
+}
+#post .post-copyright.acrylic.chinese_red {
+  position: relative;
+  margin: 2rem 0 1rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255,251,240,0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(184,32,32,0.15);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(184,32,32,0.1);
+  box-shadow: 0 8px 32px 0 rgba(184,32,32,0.1);
+  -webkit-transition: -webkit-transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  -o-transition: -o-transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  -ms-transition: -ms-transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+}
+#post .post-copyright.acrylic.chinese_red:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 12px 40px 0 rgba(184,32,32,0.25);
+  box-shadow: 0 12px 40px 0 rgba(184,32,32,0.25);
+  border-color: #b82020;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #7a1a18;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-link {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed rgba(122,26,24,0.2);
+  font-size: 0.9rem;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-link a {
+  color: #b82020;
+  text-decoration: none;
+  word-break: break-all;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-link a:hover {
+  text-decoration: underline;
+  color: #e6452f;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-grid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  gap: 2rem;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  #post .post-copyright.acrylic.chinese_red .copyright-grid {
+    gap: 1rem;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+#post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6px;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .label {
+  font-size: 0.8rem;
+  color: #8b6f5c;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .value {
+  line-height: 1.2;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .value a {
+  font-family: monospace, "Noto Serif SC", serif;
+  color: #7a1a18;
+  font-weight: bold;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+#post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .value a:hover {
+  color: #d4af37;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red {
+  background: rgba(31,31,31,0.6);
+  border-color: rgba(212,175,55,0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red:hover {
+  -webkit-box-shadow: 0 12px 40px 0 rgba(212,175,55,0.25);
+  box-shadow: 0 12px 40px 0 rgba(212,175,55,0.25);
+  border-color: #d4af37;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-title {
+  color: #d4af37;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-link {
+  border-bottom-color: rgba(212,175,55,0.2);
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-link a {
+  color: #a0a0a0;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-link a:hover {
+  color: #d4af37;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .label {
+  color: #888;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .value a {
+  color: #d4af37;
+}
+[data-theme="dark"] #post .post-copyright.acrylic.chinese_red .copyright-grid .grid-item .value a:hover {
+  color: #fff;
 }
 @-moz-keyframes china-red-border {
   0% {
